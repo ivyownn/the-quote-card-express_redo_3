@@ -1,0 +1,56 @@
+/* Reset basics */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full height setup */
+body,
+html {
+  height: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif,
+    sans-serif;
+}
+
+/* Main container */
+.main {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* 👈 this moves the content to the bottom */
+  padding: 20px; /* optional: adds some space from the bottom */
+}
+
+/* Background image */
+.mockup-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* you can also use 100% here if you prefer */
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Quote card */
+.quote-container {
+  background: rgb(230, 231, 188);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 90%;
+  width: 400px;
+  position: absolute;
+}
+
+.quote-text {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.author-text {
+  font-size: 1rem;
+  font-weight: bold;
+}
